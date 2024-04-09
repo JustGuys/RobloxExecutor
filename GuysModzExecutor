@@ -7,15 +7,15 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
 ]=]
 
--- Instances: 15 | Scripts: 3 | Modules: 0
+-- Instances: 18 | Scripts: 5 | Modules: 0
 local G2L = {};
 
--- StarterGui.GuysModz GUI
+-- StarterGui.StarterGui
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-G2L["1"]["Name"] = [[GuysModz GUI]];
+G2L["1"]["Name"] = [[StarterGui]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
--- StarterGui.GuysModz GUI.Main
+-- StarterGui.StarterGui.Main
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
@@ -24,11 +24,11 @@ G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["Position"] = UDim2.new(0.2450229674577713, 0, 0.23573200404644012, 0);
 G2L["2"]["Name"] = [[Main]];
 
--- StarterGui.GuysModz GUI.Main.UICorner
+-- StarterGui.StarterGui.Main.UICorner
 G2L["3"] = Instance.new("UICorner", G2L["2"]);
 
 
--- StarterGui.GuysModz GUI.Main.Panel
+-- StarterGui.StarterGui.Main.Panel
 G2L["4"] = Instance.new("Frame", G2L["2"]);
 G2L["4"]["BorderSizePixel"] = 0;
 G2L["4"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
@@ -36,11 +36,11 @@ G2L["4"]["Size"] = UDim2.new(0, 665, 0, 43);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4"]["Name"] = [[Panel]];
 
--- StarterGui.GuysModz GUI.Main.Panel.UICorner
+-- StarterGui.StarterGui.Main.Panel.UICorner
 G2L["5"] = Instance.new("UICorner", G2L["4"]);
 
 
--- StarterGui.GuysModz GUI.Main.Panel.TextLabel
+-- StarterGui.StarterGui.Main.Panel.TextLabel
 G2L["6"] = Instance.new("TextLabel", G2L["4"]);
 G2L["6"]["TextWrapped"] = true;
 G2L["6"]["BorderSizePixel"] = 0;
@@ -55,7 +55,7 @@ G2L["6"]["Text"] = [[GuysModz Executor!]];
 G2L["6"]["BackgroundTransparency"] = 1;
 G2L["6"]["Position"] = UDim2.new(0.3353383541107178, 0, 0, 0);
 
--- StarterGui.GuysModz GUI.Main.TextBox
+-- StarterGui.StarterGui.Main.TextBox
 G2L["7"] = Instance.new("TextBox", G2L["2"]);
 G2L["7"]["BorderSizePixel"] = 0;
 G2L["7"]["TextSize"] = 14;
@@ -69,11 +69,11 @@ G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7"]["Text"] = [[]];
 G2L["7"]["Position"] = UDim2.new(0.048120301216840744, 0, 0.19014084339141846, 0);
 
--- StarterGui.GuysModz GUI.Main.TextBox.UICorner
+-- StarterGui.StarterGui.Main.TextBox.UICorner
 G2L["8"] = Instance.new("UICorner", G2L["7"]);
 
 
--- StarterGui.GuysModz GUI.Main.Execute
+-- StarterGui.StarterGui.Main.Execute
 G2L["9"] = Instance.new("TextButton", G2L["2"]);
 G2L["9"]["TextWrapped"] = true;
 G2L["9"]["BorderSizePixel"] = 0;
@@ -88,15 +88,15 @@ G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["9"]["Text"] = [[Execute]];
 G2L["9"]["Position"] = UDim2.new(0.048120301216840744, 0, 0.8309859037399292, 0);
 
--- StarterGui.GuysModz GUI.Main.Execute.UICorner
+-- StarterGui.StarterGui.Main.Execute.UICorner
 G2L["a"] = Instance.new("UICorner", G2L["9"]);
 
 
--- StarterGui.GuysModz GUI.Main.Execute.LocalScript
+-- StarterGui.StarterGui.Main.Execute.LocalScript
 G2L["b"] = Instance.new("LocalScript", G2L["9"]);
 
 
--- StarterGui.GuysModz GUI.Main.Clear
+-- StarterGui.StarterGui.Main.Clear
 G2L["c"] = Instance.new("TextButton", G2L["2"]);
 G2L["c"]["TextWrapped"] = true;
 G2L["c"]["BorderSizePixel"] = 0;
@@ -111,19 +111,42 @@ G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["c"]["Text"] = [[Clear]];
 G2L["c"]["Position"] = UDim2.new(0.5563910007476807, 0, 0.8309859037399292, 0);
 
--- StarterGui.GuysModz GUI.Main.Clear.UICorner
+-- StarterGui.StarterGui.Main.Clear.UICorner
 G2L["d"] = Instance.new("UICorner", G2L["c"]);
 
 
--- StarterGui.GuysModz GUI.Main.Clear.LocalScript
+-- StarterGui.StarterGui.Main.Clear.LocalScript
 G2L["e"] = Instance.new("LocalScript", G2L["c"]);
 
 
--- StarterGui.GuysModz GUI.Main.LocalScript
+-- StarterGui.StarterGui.Main.LocalScript
 G2L["f"] = Instance.new("LocalScript", G2L["2"]);
 
 
--- StarterGui.GuysModz GUI.Main.Execute.LocalScript
+-- StarterGui.StarterGui.Main.TextLabel
+G2L["10"] = Instance.new("TextLabel", G2L["2"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextScaled"] = true;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["10"]["Size"] = UDim2.new(0, 188, 0, 24);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[Made By Justguys!]];
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["Position"] = UDim2.new(0.7022556662559509, 0, 0.13380281627178192, 0);
+
+-- StarterGui.StarterGui.LocalScript
+G2L["11"] = Instance.new("LocalScript", G2L["1"]);
+
+
+-- StarterGui.StarterGui.LocalScriptClose
+G2L["12"] = Instance.new("LocalScript", G2L["1"]);
+G2L["12"]["Name"] = [[LocalScriptClose]];
+
+-- StarterGui.StarterGui.Main.Execute.LocalScript
 local function C_b()
 local script = G2L["b"];
 	local button = script.Parent
@@ -133,7 +156,7 @@ local script = G2L["b"];
 	end)
 end;
 task.spawn(C_b);
--- StarterGui.GuysModz GUI.Main.Clear.LocalScript
+-- StarterGui.StarterGui.Main.Clear.LocalScript
 local function C_e()
 local script = G2L["e"];
 	local button = script.Parent
@@ -143,12 +166,48 @@ local script = G2L["e"];
 	end)
 end;
 task.spawn(C_e);
--- StarterGui.GuysModz GUI.Main.LocalScript
+-- StarterGui.StarterGui.Main.LocalScript
 local function C_f()
 local script = G2L["f"];
 	script.Parent.Draggable = true
 	script.Parent.Active = true
 end;
 task.spawn(C_f);
+-- StarterGui.StarterGui.LocalScript
+local function C_11()
+local script = G2L["11"];
+	local gui = script.Parent
+	local isOpen = false
+	
+	local function toggleGUI()
+		isOpen = not isOpen
+		gui.Enabled = isOpen
+	end
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.Insert then
+			toggleGUI()
+		end
+	end)
+end;
+task.spawn(C_11);
+-- StarterGui.StarterGui.LocalScriptClose
+local function C_12()
+local script = G2L["12"];
+	local gui = script.Parent
+	local isOpen = false
+	
+	local function toggleGUI()
+		isOpen = not isOpen
+		gui.Enabled = isOpen
+	end
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.RightShift then
+			toggleGUI()
+		end
+	end)
+end;
+task.spawn(C_12);
 
 return G2L["1"], require;
