@@ -1,0 +1,154 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
+]=]
+
+-- Instances: 15 | Scripts: 3 | Modules: 0
+local G2L = {};
+
+-- StarterGui.GuysModz GUI
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[GuysModz GUI]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.GuysModz GUI.Main
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["2"]["Size"] = UDim2.new(0, 665, 0, 426);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Position"] = UDim2.new(0.2450229674577713, 0, 0.23573200404644012, 0);
+G2L["2"]["Name"] = [[Main]];
+
+-- StarterGui.GuysModz GUI.Main.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+
+
+-- StarterGui.GuysModz GUI.Main.Panel
+G2L["4"] = Instance.new("Frame", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["4"]["Size"] = UDim2.new(0, 665, 0, 43);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Name"] = [[Panel]];
+
+-- StarterGui.GuysModz GUI.Main.Panel.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
+
+
+-- StarterGui.GuysModz GUI.Main.Panel.TextLabel
+G2L["6"] = Instance.new("TextLabel", G2L["4"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["6"]["Size"] = UDim2.new(0, 220, 0, 43);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[GuysModz Executor!]];
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Position"] = UDim2.new(0.3353383541107178, 0, 0, 0);
+
+-- StarterGui.GuysModz GUI.Main.TextBox
+G2L["7"] = Instance.new("TextBox", G2L["2"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["7"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["Size"] = UDim2.new(0, 601, 0, 263);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[]];
+G2L["7"]["Position"] = UDim2.new(0.048120301216840744, 0, 0.19014084339141846, 0);
+
+-- StarterGui.GuysModz GUI.Main.TextBox.UICorner
+G2L["8"] = Instance.new("UICorner", G2L["7"]);
+
+
+-- StarterGui.GuysModz GUI.Main.Execute
+G2L["9"] = Instance.new("TextButton", G2L["2"]);
+G2L["9"]["TextWrapped"] = true;
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextScaled"] = true;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["9"]["Size"] = UDim2.new(0, 251, 0, 50);
+G2L["9"]["Name"] = [[Execute]];
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[Execute]];
+G2L["9"]["Position"] = UDim2.new(0.048120301216840744, 0, 0.8309859037399292, 0);
+
+-- StarterGui.GuysModz GUI.Main.Execute.UICorner
+G2L["a"] = Instance.new("UICorner", G2L["9"]);
+
+
+-- StarterGui.GuysModz GUI.Main.Execute.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["9"]);
+
+
+-- StarterGui.GuysModz GUI.Main.Clear
+G2L["c"] = Instance.new("TextButton", G2L["2"]);
+G2L["c"]["TextWrapped"] = true;
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["TextScaled"] = true;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["c"]["Size"] = UDim2.new(0, 251, 0, 50);
+G2L["c"]["Name"] = [[Clear]];
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Text"] = [[Clear]];
+G2L["c"]["Position"] = UDim2.new(0.5563910007476807, 0, 0.8309859037399292, 0);
+
+-- StarterGui.GuysModz GUI.Main.Clear.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["c"]);
+
+
+-- StarterGui.GuysModz GUI.Main.Clear.LocalScript
+G2L["e"] = Instance.new("LocalScript", G2L["c"]);
+
+
+-- StarterGui.GuysModz GUI.Main.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["2"]);
+
+
+-- StarterGui.GuysModz GUI.Main.Execute.LocalScript
+local function C_b()
+local script = G2L["b"];
+	local button = script.Parent
+	local textbox = script.Parent.Parent.TextBox
+	button.MouseButton1Click:Connect(function()
+		loadstring(textbox.Text)()
+	end)
+end;
+task.spawn(C_b);
+-- StarterGui.GuysModz GUI.Main.Clear.LocalScript
+local function C_e()
+local script = G2L["e"];
+	local button = script.Parent
+	local textbox = script.Parent.Parent.TextBox
+	button.MouseButton1Click:Connect(function()
+		textbox.Text = ""
+	end)
+end;
+task.spawn(C_e);
+-- StarterGui.GuysModz GUI.Main.LocalScript
+local function C_f()
+local script = G2L["f"];
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+end;
+task.spawn(C_f);
+
+return G2L["1"], require;
